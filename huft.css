@@ -1,0 +1,21 @@
+.electric-border {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  width: 850px;
+  height: 450px;
+  background-image: 
+    url('petirdte.png'), /* Replace with your SVG file */
+    url('petirdte.png'), /* Replace with your SVG file */
+    linear-gradient(to right, #1E3A8A, #1E3A8A);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: 
+    10px 10px, /* Top-left corner */
+    calc(100% - 10px) calc(100% - 10px), /* Bottom-right corner */
+    0 0;
+  background-size: 
+    30px 30px, /* Lightning bolt size */
+    30px 30px, /* Lightning bolt size */
+    100% 100%; /* Background gradient */
+}

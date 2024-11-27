@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/font.css">
+    <style>
+        @font-face {
+            font-family: 'fonts';  /* Name you will use in CSS */
+            src: url('fonts/DK Greyfriars.otf') format('opentype'); /* Path to font file */
+        }
+
+        /* Menggunakan font kustom */
+        body {
+            font-family: sans-serif;
+            background-color: black;
+            background-image: url('bekgron.png'); /* Ganti dengan path gambar Anda */
+            background-size: cover; /* Membuat gambar memenuhi layar */
+            background-position: center; /* Menempatkan gambar di tengah */
+            background-repeat: no-repeat; /* Mencegah gambar diulang */
+            height: 100vh; /* Mengatur tinggi body agar sesuai dengan tinggi layar */
+        }
+
+        /* Mengatur font pada elemen input */
+        input {
+            font-family: 'fonts', sans-serif; /* Menggunakan font kustom pada input */
+        }
+
+        .welcome-text {
+            font-family: 'fonts', sans-serif;
+        }
+
+    </style>
+</head>
+<body class="h-screen flex items-center justify-center">
+    <div class="flex flex-col items-center space-y-4">
+        <!-- Tulisan di atas kotak biru -->
+        <h1 class="text-6xl font-extrabold text-black welcome-text" style="letter-spacing: 20px;">WELCOME!</h1>
+    <!-- Kotak biru di Tengah Layar -->
+    <div class="bg-gradient-to-br from-blue-500 to-blue-950 w-[850px] h-[450px] rounded-[30px] flex items-center justify-start p-2 border-[3px] border-black">
+        <div class="flex flex-col items-center space-y-4">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+            <img src="petirdte.png" alt="petirdte" class="w-[45px] h-[45px]">
+        </div>
+         <!-- Kotak Putih di Tengah Layar -->
+         <div class="bg-white w-[260px] h-[300px] rounded-[40px] shadow-md flex items-center justify-center relative ml-4">
+            <img src="rawr.png" alt="Profile Photo"
+                class="absolute top-[0px] w-[260px] h-[300px] rounded-[30px]"
+            />
+        </div>
+        <!-- Tulisan Putih di Tengah Layar -->
+        <form action="submit_form.php" method="POST" class="text-white ml-3 flex items-center flex-col space-y-4 p-10">
+            <p class="text-2xl whitespace-nowrap font-bold">PERMANENT ACCOUNT LICENSE</p>
+            <!-- Form Input Username -->
+            <input type="text" placeholder="Username" class="text-blue-800 w-full px-2 py-2 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled">
+
+            <!-- Form Input Password -->
+            <input type="password" placeholder="Password" class="text-blue-800 block text-base w-full px-2 py-2 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled">
+
+             <!-- Form Input NPM -->
+             <input type="NPM" placeholder="NPM" class="text-blue-800 w-full px-2 py-2 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled">
+
+             <!-- Form Input Contact -->
+             <input type="Contact" placeholder="Contact" class="text-blue-800 w-full px-2 py-2 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled">
+
+            <!-- Button Submit -->
+            <button class="font-extrabold w-[-50px] px-4 py-2 bg-white text-black rounded-[20px] hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 hover:scale-110 duration-300">SIGN UP</button>
+            <div class="text-white ml-3 flex items-center flex-col space-y-4">
+                <p class="text-[13px] whitespace-nowrap font-light -mt-2">
+                    Already have an account license? 
+                    <a href="login.html" class="text-blue-200 underline hover:text-blue-400">Log In</a>
+                </p>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
